@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+    <title>Prospecção de Clientes</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        main {
+            background-color: #fff;
+            padding: 20px;
+            margin: 5px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 900px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .img-content {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        
+        .img {
+            height: 6rem;
+        }
+        
+        .title-bar-content {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .title-bar {
+            font-size: 18px;
+            background-color: blue;
+            padding: 2px 5px;
+            color: #fff;
+        }
+        
+        .flex-div {
+            display: flex;
+        }
+        
+        .flex-full-div {
+            flex: 1;
+            display: flex;
+        }
+        
+        .flex-full-input {
+            flex: 1;
+        }
+        
+        .flex-center {
+            justify-content: center;
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+        
+        .div-padding {
+            padding: 6px 4px;
+        }
+        
+        .margin-high {
+            margin-top: 8px;
+        }
+        
+        .margin-low {
+            margin-top: 5px;
+        }
+        
+        .textarea {
+            margin-top: 8px;
+        }
+        
+        .input-textarea {
+            width: 100%; /* Largura total do contêiner */
+            height: 150px; /* Altura do textarea */
+            border: 1px solid #ccc; /* Borda do textarea */
+            box-sizing: border-box; /* Inclui padding e bordas no tamanho total */
+            resize: vertical; /* Permite que o usuário redimensione verticalmente */
+            font-size: 16px; /* Tamanho da fonte */
+            outline: none; /* Remove a borda de foco padrão */
+        }
+        
+        .input-textarea:focus {
+            border-color: #007bff; /* Cor da borda ao focar */
+        }
+        
+        .font-bold {
+            font-weight: 600;
+            font-size: 0.9em;
+        }
+        
+        .font-bold-case {
+            font-weight: 600;
+            font-size: 0.9em;
+        }
+        
+        .border {
+            border: 1px solid black;
+        }
+        
+        .input-none {
+            border: none;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="img-content">
+            <img class='img' src="https://lh6.googleusercontent.com/proxy/oQDt6F3uDV_9Q-_KfCZHBvWKXV5elrOkYH8Y4cmISgDSbbBfAI3h0f5uu6LMaPt4Hoi_HeS-1LxSE94Z3k4NYCv7"/>
+            <img class='img' src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Zeiss_logo.svg/2048px-Zeiss_logo.svg.png"/>
+        </div>
+        <div>
+            <div class='title-bar-content'>
+                <div class='title-bar'>1 - IDENTIFICAÇÃO</div>
+                <div class='text-center font-bold-case'>INFORMAÇÕES PARA CADASTRO DE PESSOA JURÍDICA</div>
+            </div>
+            <div class='flex-full-div div-padding margin-low font-bold border'><label>Razão Social:</label><input class='flex-full-input input-none'/></div>
+            <div class='flex-full-div div-padding font-bold border'><label>Nome Fantasia:</label><input class='flex-full-input input-none'/></div>
+            <div class='flex-full-div div-padding font-bold border'><label>CNPJ:</label><input class='flex-full-input input-none'/></div>
+            <div class='flex-div border'>
+                <div class='flex-full-div div-padding font-bold'><label>Inscrição Estadual:</label><input class='flex-full-input input-none'/></div>
+                <div class='flex-full-div div-padding font-bold'><label>Municipal:</label><input class='flex-full-input input-none'/></div>
+            </div>
+            <div class='flex-div border'>
+                <div class='flex-full-div div-padding font-bold'><label>Endereço:</label><input class='flex-full-input input-none'/></div>
+                <div class='flex-full-div div-padding font-bold'><label>Bairro:</label><input class='flex-full-input input-none'/></div>
+            </div>
+            <div class='flex-div border'>
+                <div class='flex-full-div div-padding font-bold'><label>Cidade:</label><input class='flex-full-input input-none'/></div>
+                <div class='flex-full-div div-padding font-bold'><label>UF:</label><input class='flex-full-input input-none'/></div>
+                <div class='flex-full-div div-padding font-bold'><label>CEP:</label><input class='flex-full-input input-none'/></div>
+            </div>
+            <div class='flex-div border'>
+                <div class='flex-full-div div-padding font-bold'><label>Telefone:</label><input class='flex-full-input input-none'/></div>
+                <div class='flex-full-div div-padding font-bold'><label>FAX:</label><input class='flex-full-input input-none'/></div>
+            </div>
+            <div class='flex-full-div div-padding font-bold border'><label>E-mail:</label><input class='flex-full-input input-none'/></div>
+        </div>
+
+        <div class='margin-high'>
+            <div class='title-bar-content'><div class='title-bar'>2 - REFERÊNCIAS COMERCIAIS</div></div>
+            <div class='text-center div-padding font-bold-case border'>DADOS DOS PRINCIPAIS FORNECEDORES</div>
+            <div class='flex-div'>
+                <div class='flex-full-div flex-center div-padding font-bold-case'>EMPRESA</div>
+                <div class='flex-full-div flex-center div-padding font-bold-case'>CIDADE</div>
+                <div class='flex-full-div flex-center div-padding font-bold-case'>CONTATO</div>
+            </div>
+            <div class='flex-div'>
+                <div class="flex-full-div div-padding"><input class='flex-full-input text-center'/></div>
+                <div class="flex-full-div div-padding"><input class='flex-full-input text-center'/></div>
+                <div class="flex-full-div div-padding"><input class='flex-full-input text-center'/></div>
+            </div>
+            <div class='flex-div'>
+                <div class="flex-full-div div-padding"><input class='flex-full-input text-center'/></div>
+                <div class="flex-full-div div-padding"><input class='flex-full-input text-center'/></div>
+                <div class="flex-full-div div-padding"><input class='flex-full-input text-center'/></div>
+            </div>
+            <div class='flex-div'>
+                <div class="flex-full-div div-padding"><input class='flex-full-input text-center'/></div>
+                <div class="flex-full-div div-padding"><input class='flex-full-input text-center'/></div>
+                <div class="flex-full-div div-padding"><input class='flex-full-input text-center'/></div>
+            </div>
+        </div>
+
+        <div class='margin-high'>
+            <div class='title-bar-content'><div class='title-bar'>3 - POLÍTICA COMERCIAL - USO INTERNO FITLAB</div></div>
+            <div class='flex-div margin-low border'>
+                <div class='flex-full-div div-padding font-bold'><label>Promotor:</label><input class='flex-full-input input-none'/></div>
+                <div class='flex-full-div div-padding font-bold'><label>Pertence a grupo?:</label><input class='flex-full-input input-none'/></div>
+                <div class='flex-full-div div-padding font-bold'><label>Código matriz:</label><input class='flex-full-input input-none'/></div>
+            </div>
+            <div class='flex-div margin-low border'>
+                <div class='flex-full-div div-padding font-bold'><label>Fechamento:</label><input class='flex-full-input input-none'/></div>
+                <div class='flex-full-div div-padding font-bold'><label>Prazo pagto:</label><input class='flex-full-input input-none'/></div>
+                <div class='flex-full-div div-padding font-bold'><label>Desconto Zeiss:</label><input class='flex-full-input input-none'/></div>
+            </div>
+            <div class='flex-div margin-low border'>
+                <div class='flex-full-div div-padding font-bold'><label>Desconto Visionfit:</label><input class='flex-full-input input-none'/></div>
+                <div class='flex-full-div div-padding font-bold'><label>Lente pronta:</label><input class='flex-full-input input-none'/></div>
+                <div class='flex-full-div div-padding font-bold'><label>Serviço:</label><input class='flex-full-input input-none'/></div>
+            </div>
+            <div class='flex-div margin-low border'>
+                <div class='flex-full-div div-padding font-bold'><label>Política Comercial:</label><input class='flex-full-input input-none'/></div>
+                <div class='flex-full-div div-padding font-bold'><label>Limite:</label><input class='flex-full-input input-none'/></div>
+            </div>
+        </div>
+        <div class='textarea'><input class='input-textarea' placeholder='OBS.:'/></div>
+    </main>
+</body>
+</html>
